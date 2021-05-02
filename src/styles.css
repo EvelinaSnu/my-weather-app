@@ -1,0 +1,40 @@
+html,
+body {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  margin: 0;
+  height: 100%;
+  min-width: 100%;
+}
+
+button {
+  margin: 0 auto;
+  size: 100%;
+}
+.container h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  line-height: 100px;
+}
+
+.search-container {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+}
+.weather-output {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+}
+
+.row-city {
+  color: blueviolet;
+  font-size: 20px;
+}
+.units {
+  text-decoration: none;
+  color: crimson;
+}

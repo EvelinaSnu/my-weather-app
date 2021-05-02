@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>What is the wheater?</h1>
+      <div class="search-container">
+        <form
+          class="border border-primary border-2 rounded-3 p-3"
+          id="cityForm"
+        >
+          <input
+            type="city"
+            placeholder="Enter the city"
+            autofocus
+            id="city-input"
+          />
+          <input type="submit" class="btn btn-outline-secondary" value="🔎" />
+          <button class="btn btn-outline-secondary" id="current">📍</button>
+        </form>
+      </div>
+      <br />
+      <div class="weather-output border border-primary border-2 rounded-3 p-3">
+        <div class="row">
+          <div class="col"><span id="description"></span></div>
+          <div class="col"><span id="wind"></span> km/h</div>
+          <div class="col"><span id="humidity"></span> %</div>
+        </div>
+        <div class="row-city">
+          <span class="col" id="city-output"></span>
+        </div>
+        <div class="row-temp">
+          <span class="col-temp" id="temperature"></span>
+          <span id="units">
+            <a class="units" href="#" id="celsius"> °C </a> |
+            <a class="units" href="#" id="fahrenheit"> °F </a>
+          </span>
+        </div>
+        <div class="row-date-time">
+          <span class="col-date" id="date-time"></span>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
