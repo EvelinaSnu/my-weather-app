@@ -16,42 +16,53 @@
   </head>
   <body>
     <div class="container">
-      <h1>What is the wheater?</h1>
-      <div class="search-container">
-        <form
-          class="border border-primary border-2 rounded-3 p-3"
-          id="cityForm"
-        >
-          <input
-            type="city"
-            placeholder="Enter the city"
-            autofocus
-            id="city-input"
-          />
-          <input type="submit" class="btn btn-outline-secondary" value="🔎" />
-          <button class="btn btn-outline-secondary" id="current">📍</button>
+      <h1>What is the weather?</h1>
+      <div class="weather-app-wrapper">
+        <form id="search-form">
+          <div class="row">
+            <div class="col-8">
+              <input
+                type="city"
+                placeholder="Enter the city"
+                autocomplete="off"
+                autofocus
+                id="city-input"
+                class="form-control"
+              />
+            </div>
+            <div class="col-2">
+              <input
+                type="submit"
+                class="btn btn-outline-secondary"
+                value="🔎"
+              />
+            </div>
+            <div class="col-2">
+              <button class="btn btn-outline-secondary" id="current">📍</button>
+            </div>
+          </div>
         </form>
-      </div>
-      <br />
-      <div class="weather-output border border-primary border-2 rounded-3 p-3">
-        <div class="row">
-          <div class="col"><span id="description"></span></div>
-          <div class="col"><span id="wind"></span> km/h</div>
-          <div class="col"><span id="humidity"></span> %</div>
+        <br />
+        <div class="weatherOuput">
+          <ul class="row-date-time">
+            <li>Last updated: <span class="col-date" id="date-time"></span></li>
+          </ul>
+          <div class="row">
+            <div class="col"><span id="description"></span></div>
+            <div class="col"><span id="wind"></span> km/h</div>
+            <div class="col"><span id="humidity"></span> %</div>
+          </div>
+          <div class="row-city">
+            <span class="col" id="city-output"></span>
+          </div>
+          <div class="row-temp">
+            <span class="col-temp" id="temperature"></span>
+            <span id="units">
+              <a class="units" href="#" id="celsius"> °C </a> |
+              <a class="units" href="#" id="fahrenheit"> °F </a>
+            </span>
+          </div>
         </div>
-        <div class="row-city">
-          <span class="col" id="city-output"></span>
-        </div>
-        <div class="row-temp">
-          <span class="col-temp" id="temperature"></span>
-          <span id="units">
-            <a class="units" href="#" id="celsius"> °C </a> |
-            <a class="units" href="#" id="fahrenheit"> °F </a>
-          </span>
-        </div>
-        <ul class="row-date-time">
-          <li>Last updated: <span class="col-date" id="date-time"></span></li>
-        </ul>
       </div>
     </div>
     <script src="src/script.js"></script>

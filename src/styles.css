@@ -6,11 +6,6 @@ body {
   min-width: 100%;
 }
 
-button {
-  margin: 0 auto;
-  size: 100%;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -36,17 +31,12 @@ footer {
   line-height: 100px;
 }
 
-.search-container {
-  display: block;
-  margin: 0 auto;
-  width: 30%;
-  text-align: center;
-}
-.weather-output {
-  display: block;
-  margin: 0 auto;
-  width: 30%;
-  text-align: center;
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
 .row-city {
