@@ -81,7 +81,7 @@ function displayCurrentLocation(event) {
 
 let dateTimeElement = document.querySelector("#date-time");
 let currentTime = new Date();
-let searchForm = document.querySelector("#cityForm");
+let searchForm = document.querySelector("#search-form");
 
 dateTimeElement.innerHTML = currentDateTime(currentTime);
 
