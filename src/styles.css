@@ -9,6 +9,7 @@ body {
 ul {
   margin: 0;
   padding: 0;
+  padding-left: 0;
 }
 
 li {
@@ -32,7 +33,7 @@ footer {
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 500px;
   margin: 30px auto;
   padding: 20px;
   border: 1px solid #000;
@@ -42,6 +43,11 @@ footer {
 .row-city {
   color: blueviolet;
   font-size: 20px;
+  text-align: center;
+}
+
+.row-temp {
+  text-align: center;
 }
 .units {
   text-decoration: none;
